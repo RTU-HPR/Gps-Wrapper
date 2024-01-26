@@ -1,6 +1,4 @@
 #pragma once
-#ifdef GPS_WRAPPER_ENABLE
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h>
@@ -94,4 +92,3 @@ public:
      */
     bool configure(const Gps_Config &config);
 };
-#endif

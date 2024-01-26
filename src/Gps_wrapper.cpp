@@ -1,4 +1,3 @@
-#ifdef GPS_WRAPPER_ENABLE
 #include "gps_wrapper.h"
 
 Gps_Wrapper::Gps_Wrapper(void (*error_function)(String), String sensor_name) : Sensor_Wrapper(sensor_name, error_function)
@@ -196,4 +195,3 @@ bool Gps_Wrapper::configure(const Gps_Config &config)
     }
     return true;
 }
-#endif
